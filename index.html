@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="container">
+      <div lass="row">
+        <div type="button" id="green" class="btn green"></div>
+
+        <div type="button" id="red" class="btn red"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- The logic of the game is as follows:
+
+First, any of the buttons are blinking. For example, the yellow button for level 1 flashed. Then, at Level 2, the red button flashed. Then you have to complete the level 2 by pressing the yellow button first and then the red button. If the green button flashes in Level 3; first you have to press the button in level 1, then the button in level 2 and then the button in level 3. In other words, you have to move forward by keeping the flashing buttons in the previous levels in mind.
+
+For example ;
+
+To pass level 4:
+
+Level 1 button then Level 2 button then Level 3 Button and Level 4 Button must be pressed.
+
+IF ;
+
+Level 1 : YELLOW
+
+Level 2 : RED
+
+Level 3 : GREEN
+
+Level 4 : RED
+
+To pass level 4 :
+
+You need to click YELLOW-RED-GREEN-RED . -->
